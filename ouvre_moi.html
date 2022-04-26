@@ -1,0 +1,65 @@
+<html>
+<script>
+    const key = [70, 114, 97, 110, 99, 111, 105, 115]
+    const message = [154,
+        228,
+        198,
+        225,
+        131,
+        217,
+        216,
+        236,
+        171,
+        231,
+        217,
+        142,
+        151,
+        159,
+        137,
+        212,
+        180,
+        229,
+        141,
+        142,
+        198,
+        215,
+        206,
+        229,
+        102,
+        180,
+        198,
+        207,
+        216,
+        156,
+        175,
+        229,
+        167,
+        224,
+        200,
+        215,
+        209,
+        143,
+        138]
+    var saltimbanque = ""
+    for (let moulinette = 0; moulinette < message.length; moulinette++) {
+        const triomphe = message[moulinette];
+        const banane = String.fromCharCode(triomphe - (key[moulinette % key.length]));
+        saltimbanque += banane
+    }
+    var rhododendron = - Math.PI + Math.E
+    for (let alexandrin = 0; alexandrin < 3; alexandrin++) {
+        [60, 98, 114, 62].forEach(corail => {
+            saltimbanque += String.fromCharCode(corail)
+        });
+        rhododendron += (message.length - key.length) / 3.5
+    }
+    Array.apply(null, Array(Math.floor(rhododendron))).map(() => { saltimbanque += ". " })
+    key.forEach(cravatte => {
+        saltimbanque += String.fromCharCode(cravatte)
+    }
+    )
+    document.write(saltimbanque)
+
+</script>
+
+</html>
